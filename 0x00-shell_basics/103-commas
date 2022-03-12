@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -p | grep -v / | tr '\n' ','
+1s -1p | grep -v / | sed 's/$/ , /g | xargs echo | sed 's/,$//g'
