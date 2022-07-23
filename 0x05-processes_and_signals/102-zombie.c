@@ -43,6 +43,6 @@ int main(void)
 
 	infinite_while();
 
-	returns (EXIT_SUCCESS);
+	return (EXIT_SUCCESS);
 }
 
