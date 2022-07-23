@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# creates the file /var/run/myscript.pid containing its PID
+# Creates the file /var/run/myscript.pid containing its PID
 
 terminator() {
-  rm/var/run/holbertonscript.pid
+  rm /var/run/holbertonscript.pid
   exit
 }
 
@@ -12,7 +12,7 @@ while true
 do
   echo "To infinity and beyond"
   sleep 2
-  trap 'echo "Y U no love me?!"'SIGINT
+  trap 'echo "Y U no love me?!"' SIGINT
   trap 'echo "I hate the kill command" && terminator' SIGTERM
   trap 'terminator' SIGQUIT
 done
