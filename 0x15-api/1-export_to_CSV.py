@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """fetches information from JSONplaceholder API and export to CSV"""
 
-from csv import DirctWriter, QUOTE_ALL
+from csv import DictWriter, QUOTE_ALL
 from requests import get
 from sys import argv
 
