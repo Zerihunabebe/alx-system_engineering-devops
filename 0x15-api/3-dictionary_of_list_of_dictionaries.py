@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
         todo_result = get(todos_url).json()
         name_result = get(name_url).json()
-        for todo_dict in todo_result:
+        for todo in todo_result:
             todo_dict = {}
             todo_dict.update({"username": name_result.get("username"),
                               "task": todo.get("title"),
