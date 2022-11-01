@@ -4,10 +4,10 @@
 """
 import sys
 
-if __main__ == '__main__':
+if __name__ == '__main__':
     recurse = __import__('2-recurse').recurse
     if len(sys.argv) < 2:
-        print("please pass an argument for the subreddit to search.")
+        print("Please pass an argument for the subreddit to search.")
     else:
         result = recurse(sys.argv[1])
         if result is not None:
