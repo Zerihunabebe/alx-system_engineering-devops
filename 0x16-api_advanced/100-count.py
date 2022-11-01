@@ -19,13 +19,13 @@ def add_title(dictionary, hot_posts):
             c = re.compile("^{}$".format(key), re.I)
             if c.findall(word):
                 dictionary[key] += 1
-        hot_posts.pop(0)
-        add_title(dictionary, hot_posts)
+    hot_posts.pop(0)
+    add_title(dictionary, hot_posts)
 
 
 def recurse(subreddit, dictionary, after=None):
     """ Queries to Reddit API """
-    u_agent = 'Mozzila/5.0'
+    u_agent = 'Mozilla/5.0'
     headers = {
         'User-Agent': u_agent
     }
